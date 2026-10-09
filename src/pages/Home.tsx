@@ -27,7 +27,7 @@ import {
 
 /* Fill these in later — empty string keeps the icon as a dimmed placeholder */
 const PROFILE = {
-  linkedin: '', // e.g. 'https://www.linkedin.com/in/zichen-song'
+  linkedin: 'https://www.linkedin.com/in/zichen-song-3613541a1/',
   x: '', // e.g. 'https://x.com/ZCWarren'
 }
 
@@ -54,6 +54,15 @@ const experience = [
     points: [
       'Develop SMO (Source Mask Optimization) algorithms in C++ on Linux and drive commercialization.',
       'Fab-facing owner of SMO — on-site exposure & metrology validation at customer fabs.',
+    ],
+  },
+  {
+    role: 'Technology Transfer Intern',
+    org: 'NUS Enterprise',
+    period: '2024.01 — 2024.12',
+    tags: ['Tech Transfer', 'Patent Portfolio', 'Commercialization'],
+    points: [
+      'Assessed commercialization potential of technologies and managed patent portfolios.',
     ],
   },
   {

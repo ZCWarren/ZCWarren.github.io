@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import {
   Atom,
+  BookOpen,
   Briefcase,
   Check,
   ChevronRight,
@@ -15,11 +16,13 @@ import {
   MapPin,
   MessageCircle,
   Moon,
+  PenLine,
   Phone,
   ScanLine,
   Sparkles,
   Star,
   Sun,
+  Trophy,
   Twitter,
 } from 'lucide-react'
 
@@ -124,6 +127,14 @@ const workProjects = [
 
 const ossProjects = [
   {
+    icon: BookOpen,
+    name: '计算光刻 Wiki · litho-wiki',
+    desc: 'Interactive Chinese wiki on computational lithography — Rayleigh criterion to ILT/EUV, with live demos (Abbe imaging, ILT/SMO optimizer).',
+    href: 'https://zcwarren.github.io/litho-wiki/',
+    stars: 0,
+    lang: 'JavaScript',
+  },
+  {
     icon: Atom,
     name: 'Fast-Qubit-State-Measurement-and-Feedback',
     desc: 'FPGA-based fast qubit state detection for trapped-ion quantum computing.',
@@ -168,6 +179,26 @@ const skills = [
   {
     label: 'Domains',
     items: ['Computational Lithography', 'SMO / OPC', 'Transformers & GANs', 'Quantum Computing', 'HPC Clusters'],
+  },
+]
+
+const hobbies = [
+  {
+    icon: Trophy,
+    title: 'Football',
+    desc: 'Captain of college and company teams, with multiple championships.',
+  },
+  {
+    icon: BookOpen,
+    title: 'Reading & Film',
+    desc: 'Full-time engineer, part-time critic with strong opinions on endings.',
+    href: 'https://www.douban.com/people/176249555/',
+    linkLabel: 'Douban ↗',
+  },
+  {
+    icon: PenLine,
+    title: 'Writing & Languages',
+    desc: 'IELTS 7.0, fluent English; strong technical writing, always following AI.',
   },
 ]
 
@@ -475,11 +506,35 @@ export default function Home() {
             ))}
           </div>
 
-          <p className="mt-10 text-sm leading-relaxed text-muted-foreground">
-            Beyond work — IELTS 7.0, fluent English and strong technical writing. Captain of college and company
-            football teams, with multiple championships.{' '}
-            <span className="italic opacity-80">“The corners of the world, our mere prologue.”</span>
-          </p>
+          <div className="mt-12">
+            <p className="mb-4 text-xs font-medium uppercase tracking-wider text-muted-foreground/70">
+              Beyond Work
+            </p>
+            <div className="grid gap-3 sm:grid-cols-3">
+              {hobbies.map(({ icon: Icon, title, desc, href, linkLabel }) => (
+                <div key={title} className="rounded-lg border border-border bg-card p-4">
+                  <div className="mb-2 flex items-center gap-2">
+                    <Icon className="h-4 w-4 text-amber-600 dark:text-amber-500" />
+                    <span className="text-sm font-medium">{title}</span>
+                  </div>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{desc}</p>
+                  {href && (
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-2 inline-block font-mono text-xs text-muted-foreground underline decoration-dotted underline-offset-4 transition-colors hover:text-foreground"
+                    >
+                      {linkLabel}
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 text-sm italic text-muted-foreground/80">
+              “The corners of the world, our mere prologue.”
+            </p>
+          </div>
         </section>
 
         {/* ------------------------------------------------------- footer */}

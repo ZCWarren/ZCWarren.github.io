@@ -76,6 +76,16 @@ const experience = [
       'Studied PeV cosmic-ray density & energy spectra under anisotropic propagation models.',
     ],
   },
+  {
+    role: 'Undergraduate Research Assistant — RFI Mitigation for FAST Telescope',
+    org: 'National Astronomical Observatories, CAS',
+    period: '2021.07 — 2022.06',
+    tags: ['Python', 'SumThreshold', 'SVD', 'Radio Astronomy'],
+    points: [
+      'Simulated GNSS positions and spectral power density relative to FAST.',
+      'Developed and tested RFI removal algorithms (SumThreshold, SVD), achieving 95.7% RFI removal.',
+    ],
+  },
 ]
 
 const education = [
@@ -164,7 +174,7 @@ const skills = [
   },
   {
     label: 'Workflow',
-    items: ['Linux', 'Git', 'Git-mm'],
+    items: ['ALL IN AI'],
   },
   {
     label: 'Domains',
@@ -207,6 +217,8 @@ const hobbies: Hobby[] = [
     icon: Disc3,
     title: 'Music',
     desc: 'DJ & producer — tracks span R&B, UK Drill and DnB.',
+    href: 'https://music.163.com/#/artist?id=123314872',
+    linkLabel: 'NetEase Music ↗',
   },
 ]
 

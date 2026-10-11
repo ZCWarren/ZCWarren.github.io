@@ -49,7 +49,7 @@ const socials = [
 
 const experience = [
   {
-    role: 'Algorithm & Modeling Engineer — Physical EDA',
+    role: 'Algorithm & Modeling Engineer — Semiconductor EDA',
     org: 'Shanghai Yuliangsheng Technology',
     period: '2025.03 — Present',
     tags: ['C++', 'SMO', 'OPC / DFM', 'Linux'],

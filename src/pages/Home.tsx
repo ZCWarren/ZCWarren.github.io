@@ -17,10 +17,8 @@ import {
   MapPin,
   MessageCircle,
   Moon,
-  PenLine,
   Phone,
   ScanLine,
-  Sparkles,
   Star,
   Sun,
   Trophy,
@@ -70,7 +68,7 @@ const experience = [
     ],
   },
   {
-    role: 'Summer Research — High Hnergy Cosmic-Ray Propagation Simulation',
+    role: 'Summer Research — High Energy Cosmic-Ray Propagation Simulation',
     org: 'Tsung-Dao Lee Institute, SJTU',
     period: '2024.06 — 2024.08',
     tags: ['Numerical Simulation', 'HPC'],
@@ -156,11 +154,11 @@ const skills = [
   {
     label: 'Languages',
     items: [
-    'English (Bug-free 🇬🇧)', 
-    '普通话 (Native OS 🇨🇳)', 
-    'Français (Hello World! 🇫🇷)', 
-    'Español (Downloading... ⏳🇪🇸)'
-  ],
+      'English (Bug-free 🇬🇧)',
+      '普通话 (Native OS 🇨🇳)',
+      'Français (Hello World! 🇫🇷)',
+      'Español (Downloading... ⏳🇪🇸)',
+    ],
   },
   {
     label: 'Workflow',
@@ -169,13 +167,14 @@ const skills = [
   {
     label: 'Domains',
     items: [
-    'Computational Lithography', 
-    'High Energy Astro Physics', 
-    'Quantum Computing',
-    'UK DnB & House & Garage, R&B',
-    'Westeros History',
-    'Haruki Murakami',
-    'Sci-Fi Cinematic Universe'],
+      'Computational Lithography',
+      'High Energy Astro Physics',
+      'Quantum Computing',
+      'UK DnB & House & Garage, R&B',
+      'Westeros History',
+      'Haruki Murakami',
+      'Sci-Fi Cinematic Universe',
+    ],
   },
 ]
 
@@ -192,12 +191,11 @@ const hobbies = [
     href: 'https://www.douban.com/people/176249555/',
     linkLabel: 'Douban ↗',
   },
-    {
+  {
     icon: Disc3,
     title: 'Music',
     desc: 'DJ & producer — tracks span R&B, UK Drill and DnB.',
   },
-  
 ]
 
 /* -------------------------------------------------------------- helpers */
@@ -301,7 +299,7 @@ export default function Home() {
             </p>
             <p>
               Before that, I earned my M.Sc. at{' '}
-              <span className="text-foreground">NUS</span> (Physics for Technology, GPA 4.38/5), where I built an
+              <span className="text-foreground">NUS</span> (Physics for Technology), where I built an
               FPGA-based fast qubit state measurement system for trapped-ion quantum computing at{' '}
               <span className="text-foreground">CQT</span>.
             </p>

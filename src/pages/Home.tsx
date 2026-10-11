@@ -299,7 +299,7 @@ export default function Home() {
             <span className="text-amber-600 dark:text-amber-500">.</span>
           </h1>
           <p className="mt-4 text-lg text-foreground/80">
-            Algorithm &amp; Modeling Engineer in Computational Lithography
+            Algorithm &amp; Modeling Engineer in Semiconductor EDA
           </p>
 
           <div className="mt-6 space-y-3 leading-relaxed text-muted-foreground">
@@ -429,7 +429,7 @@ export default function Home() {
           <SectionTitle icon={CircuitBoard}>Projects</SectionTitle>
 
           <p className="mb-4 text-xs font-medium uppercase tracking-wider text-muted-foreground/70">
-            Computational Lithography @ Work
+            Semiconductor EDA @ Work
           </p>
           <div className="grid gap-3 sm:grid-cols-2">
             {workProjects.map(({ icon: Icon, name, desc, meta }) => (

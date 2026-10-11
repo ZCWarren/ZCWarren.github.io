@@ -49,7 +49,7 @@ const socials = [
 
 const experience = [
   {
-    role: 'Algorithm & Modeling Engineer — Computational Lithography',
+    role: 'Algorithm & Modeling Engineer — Physical EDA',
     org: 'Shanghai Yuliangsheng Technology',
     period: '2025.03 — Present',
     tags: ['C++', 'SMO', 'OPC / DFM', 'Linux'],
@@ -154,6 +154,8 @@ const skills = [
   {
     label: 'Languages',
     items: [
+      'Python',
+      'C++',
       'English (Bug-free 🇬🇧)',
       '普通话 (Native OS 🇨🇳)',
       'Français (Hello World! 🇫🇷)',
@@ -178,7 +180,16 @@ const skills = [
   },
 ]
 
-const hobbies = [
+type Hobby = {
+  icon: React.ElementType
+  title: string
+  desc: string
+  href?: string
+  linkLabel?: string
+  quote?: boolean
+}
+
+const hobbies: Hobby[] = [
   {
     icon: Trophy,
     title: 'Football',
@@ -187,9 +198,10 @@ const hobbies = [
   {
     icon: BookOpen,
     title: 'Reading & Film',
-    desc: 'Full-time engineer, part-time critic with strong opinions on endings.',
+    desc: '“Don’t try to understand it. Feel it.” — Tenet',
     href: 'https://www.douban.com/people/176249555/',
     linkLabel: 'Douban ↗',
+    quote: true,
   },
   {
     icon: Disc3,
@@ -507,13 +519,17 @@ export default function Home() {
               Beyond Work
             </p>
             <div className="grid gap-3 sm:grid-cols-3">
-              {hobbies.map(({ icon: Icon, title, desc, href, linkLabel }) => (
+              {hobbies.map(({ icon: Icon, title, desc, href, linkLabel, quote }) => (
                 <div key={title} className="rounded-lg border border-border bg-card p-4">
                   <div className="mb-2 flex items-center gap-2">
                     <Icon className="h-4 w-4 text-amber-600 dark:text-amber-500" />
                     <span className="text-sm font-medium">{title}</span>
                   </div>
-                  <p className="text-sm leading-relaxed text-muted-foreground">{desc}</p>
+                  <p
+                    className={`text-sm leading-relaxed text-muted-foreground${quote ? ' italic' : ''}`}
+                  >
+                    {desc}
+                  </p>
                   {href && (
                     <a
                       href={href}

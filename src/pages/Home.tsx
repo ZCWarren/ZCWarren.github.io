@@ -7,6 +7,7 @@ import {
   ChevronRight,
   CircuitBoard,
   Cpu,
+  Disc3,
   FileText,
   Github,
   GraduationCap,
@@ -69,17 +70,7 @@ const experience = [
     ],
   },
   {
-    role: 'Master Thesis — Fast Qubit State Measurement & Feedback',
-    org: 'Centre for Quantum Technologies, NUS',
-    period: '2023.09 — 2024.12',
-    tags: ['FPGA', 'Verilog', 'Python', 'YOLOv8'],
-    points: [
-      'Built an ion-state measurement & feedback platform with EMCCD + FPGA (DE10-Standard).',
-      'Image processing, photon statistics and thresholding in Python; state discrimination in Verilog.',
-    ],
-  },
-  {
-    role: 'Summer Research — Cosmic-Ray Propagation Simulation',
+    role: 'Summer Research — High Hnergy Cosmic-Ray Propagation Simulation',
     org: 'Tsung-Dao Lee Institute, SJTU',
     period: '2024.06 — 2024.08',
     tags: ['Numerical Simulation', 'HPC'],
@@ -94,13 +85,13 @@ const education = [
     school: 'National University of Singapore',
     degree: 'M.Sc. Physics for Technology',
     period: '2023 — 2025',
-    note: 'GPA 4.38/5 · Trapped-ion quantum computing',
+    note: 'Trapped-ion quantum computing',
   },
   {
     school: 'China University of Mining and Technology',
     degree: 'B.Sc. Optoelectronic Information Science & Engineering',
     period: '2019 — 2023',
-    note: 'GPA 3.7/4 · Top 15% · Statistical physics thesis',
+    note: 'Statistical physics thesis',
   },
 ]
 
@@ -116,12 +107,6 @@ const workProjects = [
     name: 'Test Pattern Generator',
     desc: 'Sole architect & maintainer. Plugin-based layout generator with NumPy-vectorized geometry, GUI, scripting and external APIs — delivered to OPC, SMO R&D and FAE teams.',
     meta: 'Python · Sole owner · 1yr+',
-  },
-  {
-    icon: Sparkles,
-    name: 'AI-Assisted SRAF',
-    desc: 'BicycleGAN-based SRAF generation model integrated into a prototype; cut CTM runtime by over 50% offline.',
-    meta: 'PyTorch · GAN · Prototype',
   },
 ]
 
@@ -170,15 +155,27 @@ const ossProjects = [
 const skills = [
   {
     label: 'Languages',
-    items: ['Python', 'C++', 'C', 'Verilog', 'Rust', 'Swift', 'JavaScript', 'SQL'],
+    items: [
+    'English (Bug-free 🇬🇧)', 
+    '普通话 (Native OS 🇨🇳)', 
+    'Français (Hello World! 🇫🇷)', 
+    'Español (Downloading... ⏳🇪🇸)'
+  ],
   },
   {
     label: 'Workflow',
-    items: ['Linux', 'Shell', 'Vim', 'Git', 'Git-mm', 'Codex', 'Cursor', 'Kimi Code'],
+    items: ['Linux', 'Git', 'Git-mm'],
   },
   {
     label: 'Domains',
-    items: ['Computational Lithography', 'SMO / OPC', 'Transformers & GANs', 'Quantum Computing', 'HPC Clusters'],
+    items: [
+    'Computational Lithography', 
+    'High Energy Astro Physics', 
+    'Quantum Computing',
+    'UK DnB & House & Garage, R&B',
+    'Westeros History',
+    'Haruki Murakami',
+    'Sci-Fi Cinematic Universe'],
   },
 ]
 
@@ -186,7 +183,7 @@ const hobbies = [
   {
     icon: Trophy,
     title: 'Football',
-    desc: 'Captain of college and company teams, with multiple championships.',
+    desc: 'Barcelona 🔵🔴 & Messi 👑🐐 lifetime fan',
   },
   {
     icon: BookOpen,
@@ -195,11 +192,12 @@ const hobbies = [
     href: 'https://www.douban.com/people/176249555/',
     linkLabel: 'Douban ↗',
   },
-  {
-    icon: PenLine,
-    title: 'Writing & Languages',
-    desc: 'IELTS 7.0, fluent English; strong technical writing, always following AI.',
+    {
+    icon: Disc3,
+    title: 'Music',
+    desc: 'DJ & producer — tracks span R&B, UK Drill and DnB.',
   },
+  
 ]
 
 /* -------------------------------------------------------------- helpers */
